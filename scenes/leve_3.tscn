@@ -1,30 +1,30 @@
 [gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://Free/Background/Purple.png" type="Texture" id=1]
-[ext_resource path="res://Free/Terrain/Terrain (16x16).png" type="Texture" id=2]
-[ext_resource path="res://Free/Menu/Levels/01.png" type="Texture" id=3]
-[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/collecttable.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/tramp.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/coop.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/points_manager.gd" type="Script" id=8]
-[ext_resource path="res://scenes/level_2.tscn" type="PackedScene" id=9]
-
-[sub_resource type="ConvexPolygonShape2D" id=10]
-points = PoolVector2Array( 0, 0, 48, 0, 48, 48, 0, 48 )
+[ext_resource path="res://scenes/collecttable.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/tramp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/coop.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/level_2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/points_manager.gd" type="Script" id=6]
+[ext_resource path="res://Free/Background/Purple.png" type="Texture" id=7]
+[ext_resource path="res://Free/Terrain/Terrain (16x16).png" type="Texture" id=8]
+[ext_resource path="res://Free/Menu/Levels/01.png" type="Texture" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
-points = PoolVector2Array( 0, 0, 48, 0, 48, 16, 0, 16 )
+points = PoolVector2Array( 0, 0, 48, 0, 48, 48, 0, 48 )
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
-points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
+points = PoolVector2Array( 0, 0, 48, 0, 48, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 
-[sub_resource type="TileSet" id=3]
+[sub_resource type="TileSet" id=15]
 0/name = "Terrain (16x16).png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 8 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 96, 64, 48, 48 )
@@ -33,19 +33,19 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 10 )
+0/shape = SubResource( 11 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 10 ),
+"shape": SubResource( 11 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
 1/name = "Terrain (16x16).png 1"
-1/texture = ExtResource( 2 )
+1/texture = ExtResource( 8 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 272, 32, 48, 16 )
@@ -54,19 +54,19 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 1/navigation_offset = Vector2( 0, 0 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 11 )
+1/shape = SubResource( 12 )
 1/shape_one_way = false
 1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 12 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
 2/name = "Terrain (16x16).png 2"
-2/texture = ExtResource( 2 )
+2/texture = ExtResource( 8 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 144, 64, 32, 32 )
@@ -75,19 +75,19 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 2/navigation_offset = Vector2( 0, 0 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 12 )
+2/shape = SubResource( 13 )
 2/shape_one_way = false
 2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 12 ),
+"shape": SubResource( 13 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 2/z_index = 0
 3/name = "Terrain (16x16).png 3"
-3/texture = ExtResource( 2 )
+3/texture = ExtResource( 8 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 96, 80, 32, 32 )
@@ -96,22 +96,22 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 3/navigation_offset = Vector2( 0, 0 )
 3/shape_offset = Vector2( 0, 0 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 13 )
+3/shape = SubResource( 14 )
 3/shape_one_way = false
 3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 13 ),
+"shape": SubResource( 14 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
 
-[sub_resource type="StyleBoxEmpty" id=6]
+[sub_resource type="StyleBoxEmpty" id=16]
 content_margin_left = 3.0
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=17]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
@@ -126,7 +126,7 @@ tracks/0/keys = {
 "values": [ Vector2( 872, 356 ) ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=18]
 resource_name = "move_down"
 length = 3.5
 tracks/0/type = "value"
@@ -142,7 +142,7 @@ tracks/0/keys = {
 "values": [ Vector2( 858, 101 ), Vector2( 858, 393 ) ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=19]
 resource_name = "move_up"
 length = 3.5
 tracks/0/type = "value"
@@ -158,22 +158,22 @@ tracks/0/keys = {
 "values": [ Vector2( 858, 383 ), Vector2( 858, 101 ) ]
 }
 
-[node name="level_1" type="Node2D"]
+[node name="leve_3" type="Node2D"]
 
 [node name="level" type="Node2D" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="level"]
-margin_left = -487.0
-margin_top = -194.0
-margin_right = 1973.0
-margin_bottom = 1064.0
-texture = ExtResource( 1 )
+margin_left = -500.0
+margin_top = -158.0
+margin_right = 1606.0
+margin_bottom = 919.0
+texture = ExtResource( 7 )
 expand = true
 stretch_mode = 2
 
 [node name="TileMap" type="TileMap" parent="level"]
 scale = Vector2( 1.1, 1.1 )
-tile_set = SubResource( 3 )
+tile_set = SubResource( 15 )
 cell_size = Vector2( 48, 48 )
 show_collision = true
 format = 1
@@ -186,7 +186,7 @@ margin_left = 1.0
 margin_top = 8.0
 margin_right = 68.0
 margin_bottom = 55.0
-texture = ExtResource( 3 )
+texture = ExtResource( 9 )
 expand = true
 stretch_mode = 1
 
@@ -199,60 +199,60 @@ custom_colors/font_color = Color( 0.901961, 0.521569, 0.0745098, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
 custom_constants/line_spacing = 0
-custom_styles/normal = SubResource( 6 )
+custom_styles/normal = SubResource( 16 )
 text = "level 1 
 you can do it bro 
 you can win everthing"
 
-[node name="player" parent="level" instance=ExtResource( 4 )]
+[node name="player" parent="level" instance=ExtResource( 2 )]
 position = Vector2( -51, -13 )
 
 [node name="collectables" type="Node" parent="level"]
 unique_name_in_owner = true
 
-[node name="collectable" parent="level/collectables" instance=ExtResource( 5 )]
+[node name="collectable" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 198, 26 )
 
-[node name="collectable2" parent="level/collectables" instance=ExtResource( 5 )]
+[node name="collectable2" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 675, 179 )
 
-[node name="collectable3" parent="level/collectables" instance=ExtResource( 5 )]
+[node name="collectable3" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 386, 90 )
 
-[node name="collectable4" parent="level/collectables" instance=ExtResource( 5 )]
+[node name="collectable4" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 432, 463 )
 
-[node name="collectable5" parent="level/collectables" instance=ExtResource( 5 )]
+[node name="collectable5" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 227, 400 )
 
-[node name="collectable6" parent="level/collectables" instance=ExtResource( 5 )]
+[node name="collectable6" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 845, 94 )
 
-[node name="collectable7" parent="level/collectables" instance=ExtResource( 5 )]
+[node name="collectable7" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 128, 246 )
 
-[node name="collectable8" parent="level/collectables" instance=ExtResource( 5 )]
+[node name="collectable8" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 909, 440 )
 
-[node name="collectable9" parent="level/collectables" instance=ExtResource( 5 )]
+[node name="collectable9" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 594, 453 )
 
 [node name="points_manager" type="Node" parent="level/collectables"]
 unique_name_in_owner = true
-script = ExtResource( 8 )
+script = ExtResource( 6 )
 
-[node name="StaticBody2D" parent="level" instance=ExtResource( 6 )]
+[node name="StaticBody2D" parent="level" instance=ExtResource( 3 )]
 position = Vector2( 872, 356 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="level/StaticBody2D"]
 autoplay = "move_up"
-anims/RESET = SubResource( 7 )
-anims/move_down = SubResource( 8 )
-anims/move_up = SubResource( 9 )
+anims/RESET = SubResource( 17 )
+anims/move_down = SubResource( 18 )
+anims/move_up = SubResource( 19 )
 
-[node name="Coop" parent="level" instance=ExtResource( 7 )]
+[node name="Coop" parent="level" instance=ExtResource( 4 )]
 position = Vector2( 811, -95 )
-new_scene = ExtResource( 9 )
+new_scene = ExtResource( 5 )
 
 [node name="ui" type="CanvasLayer" parent="level"]
 

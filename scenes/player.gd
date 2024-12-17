@@ -53,6 +53,7 @@ func _process(delta):
 func respawn():
 	position = start_position  # Reset position to the starting point
 	velocity = Vector2.ZERO    # Reset velocity
+	animated.flip_h=false
 	# Optionally, reset other properties like health, score, etc.
 
 func idle():
@@ -66,6 +67,3 @@ func running():
 func jump():
 	if animated.animation != "jump":
 		animated.play("jump")
-
-func in_tramp(val):
-	velocity.y = -val
