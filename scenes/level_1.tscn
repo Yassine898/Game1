@@ -107,6 +107,20 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
+4/name = "Terrain (16x16).png 4"
+4/texture = ExtResource( 2 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 224, 32, 32, 32 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
 
 [sub_resource type="StyleBoxEmpty" id=6]
 content_margin_left = 3.0
@@ -163,10 +177,10 @@ tracks/0/keys = {
 [node name="level" type="Node2D" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="level"]
-margin_left = -487.0
-margin_top = -194.0
-margin_right = 1973.0
-margin_bottom = 1064.0
+margin_left = -14.0
+margin_top = -2.0
+margin_right = 1278.0
+margin_bottom = 722.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 2
@@ -177,7 +191,7 @@ tile_set = SubResource( 3 )
 cell_size = Vector2( 48, 48 )
 show_collision = true
 format = 1
-tile_data = PoolIntArray( 131076, 0, 0, 131077, 0, 0, 196608, 0, 0, 196609, 0, 0, 196616, 1, 0, 196626, 0, 0, 196627, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262155, 1, 0, 262163, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327699, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393231, 1, 0, 393235, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 1, 0, 458771, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524307, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589829, 0, 0, 589839, 1, 0, 589843, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655366, 0, 0, 655369, 1, 0, 655372, 1, 0, 655378, 0, 0, 655379, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720903, 0, 0, 720904, 0, 0, 720906, 0, 0, 720907, 0, 0, 720914, 0, 0, 720915, 0, 0 )
+tile_data = PoolIntArray( 786432, 0, 0, 786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 786436, 0, 0, 786437, 0, 0, 851973, 0, 0, 851974, 0, 0 )
 
 [node name="TextureRect2" type="TextureRect" parent="level"]
 anchor_right = 1.0

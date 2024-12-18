@@ -3,6 +3,8 @@ extends KinematicBody2D
 onready var animated = $AnimatedSprite
 export var speed = 150
 export var gravity = 300
+var jump_1 = 200
+var jump_2 = 170
 var velocity = Vector2.ZERO
 var start_position = Vector2()
 var double_jump = false
@@ -41,10 +43,10 @@ func _process(delta):
 	# Handle jumping and double jumping
 	if Input.is_action_just_pressed("ui_up"):
 		if is_on_floor():
-			velocity.y = -200
+			velocity.y = - jump_1
 			jump()
 		elif Input.is_action_pressed("ui_up") and  double_jump:
-			velocity.y = -150
+			velocity.y = -jump_2
 			double_jump = false
 			jump()
 	# Apply movement
@@ -67,3 +69,15 @@ func running():
 func jump():
 	if animated.animation != "jump":
 		animated.play("jump")
+
+func increment_jump():
+	jump_1 = 270
+	jump_2=200
+	print("jump:",jump_1,"jump_2:",jump_2)
+func init_jump():
+	jump_1 = 200
+	jump_2=170
+	print("jump:",jump_1,"jump_2:",jump_2)
+func time_jump():
+	yield(get_tree().create_timer(20),"timeout")
+	init_jump()
