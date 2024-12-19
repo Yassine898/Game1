@@ -409,6 +409,9 @@ position = Vector2( 656, 640 )
 [node name="energe" parent="level/collectables" instance=ExtResource( 1 )]
 position = Vector2( 272, 552 )
 
+[node name="energe2" parent="level/collectables" instance=ExtResource( 1 )]
+position = Vector2( 600, 216 )
+
 [node name="StaticBody2D" parent="level" instance=ExtResource( 5 )]
 position = Vector2( 872, 356 )
 
@@ -465,6 +468,18 @@ margin_bottom = 19.0
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 1
+
+[node name="Tween" type="Tween" parent="level/ui"]
+unique_name_in_owner = true
+
+[node name="ProgressBar" type="ProgressBar" parent="level/ui"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -88.0
+margin_top = -40.0
+margin_right = 88.0
 
 [connection signal="animation_finished" from="level/StaticBody2D/AnimationPlayer" to="level/StaticBody2D" method="_on_AnimationPlayer_animation_finished"]
 [connection signal="animation_finished" from="level/StaticBody2D2/AnimationPlayer" to="level/StaticBody2D2" method="_on_AnimationPlayer_animation_finished"]

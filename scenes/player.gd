@@ -56,6 +56,7 @@ func respawn():
 	position = start_position  # Reset position to the starting point
 	velocity = Vector2.ZERO    # Reset velocity
 	animated.flip_h=false
+	get_tree().reload_current_scene()
 	# Optionally, reset other properties like health, score, etc.
 
 func idle():
@@ -81,3 +82,4 @@ func init_jump():
 func time_jump():
 	yield(get_tree().create_timer(20),"timeout")
 	init_jump()
+
