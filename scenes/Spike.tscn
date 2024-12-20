@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Free/Traps/Spikes/Idle.png" type="Texture" id=1]
+[ext_resource path="res://scenes/Spike.gd" type="Script" id=2]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 8, 16, -16, 16, -16, 12, -14, 12, -14, 8, -12, 8, -12, 4, -11, 4, -10, 4, -10, 2, -8, 2, -8, 3, -8, 4, -6, 4, -6, 8, -4, 8, -4, 12, 2, 12, 2, 8, 4, 4, 6, 2, 8, 2, 10, 4, 12, 8, 14, 12, 14, 16 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
